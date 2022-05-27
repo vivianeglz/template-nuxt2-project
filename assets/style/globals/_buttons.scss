@@ -1,0 +1,23 @@
+.button {
+  margin: 0;
+  border: none;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &--s {
+    padding: $spacing-s;
+  }
+
+  &--m {
+    padding: $spacing-m;
+  }
+
+  &--primary {
+    background: $color-neutral-100;
+    color: $color-neutral-00;
+  }
+}

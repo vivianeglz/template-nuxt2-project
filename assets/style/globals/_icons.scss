@@ -1,0 +1,25 @@
+.icon {
+  &__path {
+    fill: none;
+    stroke: $color-neutral-100;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+  }
+
+  &--light {
+    .icon {
+      &__path {
+        stroke: $color-neutral-00;
+      }
+    }
+  }
+
+  &--colored {
+    .icon {
+      &__path {
+        stroke: $color-primary-1;
+      }
+    }
+  }
+}

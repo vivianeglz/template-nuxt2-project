@@ -1,0 +1,22 @@
+.alert-banner {
+  padding: 1rem;
+  margin: 0;
+  border-left: 4px solid $color-neutral-100;
+  background-color: rgba($color-neutral-50, 0.5);
+  color: $color-neutral-100;
+
+  &--success {
+    background-color: rgba($color-positive, 0.4);
+    border-color: $color-positive;
+  }
+
+  &--warning {
+    background-color: rgba($color-warning, 0.4);
+    border-color: $color-warning;
+  }
+
+  &--danger {
+    background-color: rgba($color-danger, 0.4);
+    border-color: $color-danger;
+  }
+}

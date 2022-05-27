@@ -1,0 +1,69 @@
+/* === Variables === */
+
+/* Font weights */
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+/* Font family */
+$font-family-title: "Raleway", sans-serif;
+$font-family-body: "Roboto", sans-serif;
+
+/* === Headings === */
+
+@mixin text-heading-l {
+  font-size: 2em;
+  font-family: $font-family-title;
+  color: $color-neutral-100;
+
+  @include media(medium) {
+    font-size: 3em;
+  }
+}
+
+@mixin text-heading-m {
+  font-size: 1.5em;
+  font-family: $font-family-title;
+  color: $color-neutral-100;
+
+  @include media(medium) {
+    font-size: 2em;
+  }
+}
+
+@mixin text-heading-s {
+  font-size: 1em;
+  font-family: $font-family-title;
+  color: $color-neutral-100;
+
+  @include media(medium) {
+    font-size: 1.25em;
+  }
+}
+
+@mixin text-heading($size) {
+  @if $size == "l" {
+    @include text-heading-l;
+  }
+
+  @if $size == "m" {
+    @include text-heading-m;
+  }
+
+  @if $size == "s" {
+    @include text-heading-s;
+  }
+}
+
+/* === Body === */
+
+@mixin text-body-s {
+  font-size: 1em;
+  font-family: $font-family-body;
+  color: $color-neutral-100;
+}
+
+@mixin text-body($size) {
+  @if $size == "s" {
+    @include text-body-s;
+  }
+}
